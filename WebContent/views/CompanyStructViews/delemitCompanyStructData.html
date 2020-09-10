@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Delimit Company Structure</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="../../resources/CSS/select2.min.css" rel="stylesheet" media="all">
+    <link href="../../resources/CSS/daterangepicker.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/CSS/style.css">
+    <link rel="stylesheet" href="../../resources/CSS/stylesheet.css">
+</head>
+
+<body>
+
+    <div class="sidebarContainer wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+              <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(../../logo.jpg);"></a>
+              <ul class="list-unstyled components mb-5">
+                <li class="active">
+                  <a href="#EmpStructSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Employee Structure</a>
+                  <ul class="collapse list-unstyled" id="EmpStructSubMenu">
+                  <li>
+                    <a href="../EmpStructureViews/createEmpStruct.html">Create Employee Structure</a>
+                </li>
+                <li>
+                    <a href="../EmpStructureViews/editEmpStruct.html">Edit Employee Structure</a>
+                </li>
+                <li>
+                    <a href="../EmpStructureViews/assignPayTypeToEmpStruct.html">Assign Paytype to Employee Structure</a>
+                </li>
+                  </ul>
+                </li>
+              
+  
+              
+                <li>
+                <a href="#compStructSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Company Structure</a>
+                <ul class="collapse list-unstyled" id="compStructSubmenu">
+                  <li>
+                    <a href="../CompanyStructViews/createCompanyStruct.html">Create Company Structure</a>
+                </li>
+                <li>
+                    <a href="../CompanyStructViews/editCompanyStruct.html">Edit Company Structure</a>
+                </li>
+                <li>
+                    <a href="../CompanyStructViews/assignPayTypeToCompanyStruct.html">Assign Paytype to Company Structure</a>
+                </li>
+                </ul>
+                </li>
+            
+               <li>
+                 <a href="#payTypeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pay Types</a>
+                 <ul class="collapse list-unstyled" id="payTypeSubmenu">
+                   <li>
+                       <a href="../PayTypes/createPayType.html">Create Pay Types</a>
+                   </li>
+                   <li>
+                       <a href="../PayTypes/editPayType.html">Edit Pay Types</a>
+                   </li>
+              
+                 </ul>
+                </li>
+  
+                <li>
+                    <a href="#payrollStructureSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Payroll Structure</a>
+                    <ul class="collapse list-unstyled" id="payrollStructureSubmenu">
+                      <li>
+                          <a href="../PayrollStructure/createPayrollStructure.html">Create Payroll Structure</a>
+                      </li>
+                      <li>
+                          <a href="../PayrollStructure/editPayrollStructure.html">Edit Payroll Structure</a>
+                      </li>
+                 
+                    </ul>
+                   </li>
+                   <li>
+                    <a href="#gradingStructureSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Grading and Salary Structure</a>
+                    <ul class="collapse list-unstyled" id="gradingStructureSubmenu">
+                      <li>
+                          <a href="../GradingAndSalaryViews/createGradingStructure.html">Create Grading and Salary Structure</a>
+                      </li>
+                      <li>
+                          <a href="../GradingAndSalaryViews/editGradingStructure.html">Edit Grading and Salary Structure</a>
+                      </li>
+                 
+                    </ul>
+                   </li>
+              </ul>
+        <div class="footer">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Cloud Consulting Services <i class="icon-heart" aria-hidden="true"></i> <a href="https://www.linkedin.com/company/cloud-consulting-services-mena/" target="_blank">Linkedin</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        </div>
+
+      </div>
+    </nav>
+
+
+        <!-- Page Content  -->
+        <div id="content" class=" p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="page-wrapper p-t-130 p-b-100 font-poppins">
+                <div class="wrapper wrapper--w800">
+                    <div class="card card-4">
+                        <div class="card-body">
+                            <h2 class="title">Delimit Company Structure</h2>
+
+                            <div class="row row-space paddingtop">
+                                <div class="col-5">
+                                    <div class="input-group">
+                                        <label class="label">End Date</label>
+                                        <div class="input-group-icon">
+                                            <input style="background:#0000;" readonly='true' class="input--style-4 js-datepicker" id="end_date"
+                                                type="text" name="birthday">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="companyStructModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Delimit Company Structure Payroll</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        </div>
+                                        <div class="alert alert-success " id="success_msg" hidden>
+                                            <strong>Success!</strong> The Company Structure delimited
+                                            successfully.
+                                        </div>
+                                        <div class="alert alert-danger " id="fail_msg" hidden>
+                                            <strong>Fail!</strong> The Company Structure can't be delimited.
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" id="modalOkButton" class="btn btn-secondary"
+                                                data-dismiss="modal">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="p-t-127">
+                                <button type="submit" id="buttonSubmit" class="btn  submitbtn btn-primary"
+                                    data-toggle="modal" data-target="#companyStructModal">Delimit</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    
+    <script src="../../resources/JS/main.js"></script>
+
+
+    <script src="../../resources/JS/select2.min.js"></script>
+    <script src="../../resources/JS/moment.min.js"></script>
+    <script src="../../resources/JS/daterangepicker.js"></script>
+
+    <script src="../../resources/JS/CompanyStructJS/delemitCompanyStruct.js"></script>
+
+</body>
+
+</html>

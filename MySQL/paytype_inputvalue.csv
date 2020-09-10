@@ -1,0 +1,5 @@
+code,name,description
+bo,both,"the input value is unit and value"
+cal,calculated,"the input value is calculated"
+un,unit,"the input value is unit"
+val,value,"the input value is value"

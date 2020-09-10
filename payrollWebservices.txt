@@ -1,0 +1,51 @@
+Create emp structure
+
+http://localhost:8080/Payroll/employeeStructure/addEmployeeStructure
+
+[
+	{
+"code": "1",
+"name": "1",
+"startDate": "01/03/2020",
+"endDate": "02/03/2020",
+"hasParent": false,
+"parentCode": "",
+"hasChild": true
+	},
+	{
+"code": "2",
+"name": "2",
+"startDate": "03/03/2020",
+"endDate": "05/03/2020",
+"hasParent": true,
+"parentCode": "1",
+"hasChild": true
+	
+	},{
+"code": "3",
+"name": "3",
+"startDate": "05/03/2020",
+"endDate": "06/03/2020",
+"hasParent": true,
+"parentCode": "2",
+"hasChild": false		
+	}
+,{
+"code": "4",
+"name": "4",
+"startDate": "05/03/2020",
+"endDate": "06/03/2020",
+"hasParent": true,
+"parentCode": "2",
+"hasChild": false		
+	}
+	]
+
+
+
+
+get emp structure
+
+
+
+http://localhost:8080/Payroll/employeeStructure/showEmployeeStructure?code="2"

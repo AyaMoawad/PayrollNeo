@@ -1,0 +1,4 @@
+code,name,description
+dai,daily,"the interval is each day"
+mon,monthly,"the interval is each month"
+wee,weekly,"the interval is each week"

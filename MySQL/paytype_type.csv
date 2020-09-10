@@ -1,0 +1,5 @@
+code,name,description
+co,cost,"the type is cost"
+ded,deduction,"the type is deduction"
+pay,payment,"the type is payment"
+sys,system,"the type is system"
